@@ -16,6 +16,8 @@ Install using [cargo]:
 cargo install ghlast
 ```
 
+[cargo]: https://doc.rust-lang.org/cargo/
+
 ## Pre-compiled Binaries
 
 An alternative method is to download and run the pre-compiled binaries:
