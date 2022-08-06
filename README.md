@@ -10,6 +10,20 @@ GitHub repository.
 
 ![Screenshot of ghlast inspecting ripgrep](media/screenshot.png)
 
+## Why
+
+One benefit this has over just bookmarking a URL to
+`/owner/name/releases/latest/download/asset-name.zip` is that this CLI will
+pick up pre-releases.
+
+For instance at the time of writing this the [Neovim] project has a v0.8.0
+prerelease build that they tag as `nightly`. If you use the static URL above
+you will instead get the stable v0.7.2 build instead.
+
+![Screenshot of ghlast inspecting neovim](media/neovim-screenshot.png)
+
+[Neovim]: https://github.com/neovim/neovim
+
 ## Installation
 
 Install using [cargo]:
