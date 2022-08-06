@@ -8,6 +8,8 @@
 A command line interface (CLI) used to inspect the last release published to a
 GitHub repository.
 
+![Screenshot of ghlast inspecting ripgrep](media/screenshot.png)
+
 ## Installation
 
 Install using [cargo]:
