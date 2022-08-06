@@ -22,6 +22,16 @@ you will instead get the stable v0.7.2 build instead.
 
 ![Screenshot of ghlast inspecting neovim](media/neovim-screenshot.png)
 
+I personally use it to get the latest and greatest of a binary...
+
+```bash
+#!/usr/bin/env bash
+
+URL="$(ghlast neovim neovim --output assets | grep 'appimage$')"
+curl "${URL}" --location --silent --output ~/bin/nvim && \
+  chmod 755 ~/bin/nvim
+```
+
 [Neovim]: https://github.com/neovim/neovim
 
 ## Installation
