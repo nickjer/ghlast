@@ -1,8 +1,8 @@
 use anyhow::{anyhow, Context, Result};
-use clap::{ArgEnum, Parser};
+use clap::{Parser, ValueEnum};
 use serde::Deserialize;
 
-#[derive(Debug, Copy, Clone, ArgEnum)]
+#[derive(Debug, Copy, Clone, ValueEnum)]
 enum Output {
     Tag,
     Tarball,
@@ -19,7 +19,7 @@ struct Cli {
     repo: String,
 
     /// Output value(s)
-    #[clap(short, long, arg_enum, default_value_t = Output::Tag)]
+    #[clap(short, long, value_enum, default_value_t = Output::Tag)]
     output: Output,
 }
 
